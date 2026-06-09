@@ -1,11 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <script src="./src/index.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Weather map</h1>
+    </header>
+
+    <main class="container">
+      <div class="city">
+        <label for="city">City name:</label>
+        <input type="text" id="city" name="city" placeholder="Enter city name" />
+      </div>
+
+      <div class="city-id">
+        <label for="city-id">City ID:</label>
+        <input type="text" id="city-id" name="city-id" placeholder="Enter city ID" />
+      </div>
+
+      <div class="select-way">
+        <div class="select-by-name">
+          <input type="radio" id="by-name" name="select-way" value="by-name" />
+          <label for="by-name">By name</label>
+        </div>
+
+        <div class="select-by-id">
+          <input type="radio" id="by-id" name="select-way" value="by-id" />
+          <label for="by-id">By ID</label>
+        </div>
+      </div>
+
+      <div class="res-output-container">
+        <div class="res-output">
+          <p class="res-output-label">Temperature</p>
+          <input type="text" id="temperature" name="temperature" class="output" />
+        </div>
+
+        <div class="res-output">
+          <p class="res-output-label">Wind Speed</p>
+          <input type="text" id="wind-speed" name="wind-speed" class="output" />
+        </div>
+
+        <div class="res-output">
+          <p class="res-output-label">Humidity</p>
+          <input type="text" id="humidity" name="humidity" class="output" />
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <button id="get-weather-btn">Get Weather</button>
+        <button id="cancel-btn">Cancel</button>
+      </div>
+    </main>
+  </body>
 </html>

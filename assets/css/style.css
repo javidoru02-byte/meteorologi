@@ -1,0 +1,77 @@
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 20px;
+  width: 65%;
+  margin: 20px auto;
+  gap: 40px;
+}
+.city,
+.city-id {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  border: 1px solid black;
+  padding: 10px;
+  width: 70%;
+}
+input:not([type="radio"]) {
+  width: 50%;
+  height: 30px;
+}
+
+.select-way {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30%;
+  padding: 10px;
+  width: 70%;
+}
+
+.select-by-name,
+.select-by-id {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+
+.res-output-container {
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+}
+.res-output {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 170px;
+  padding: 30px;
+  width: 70%;
+}
+button {
+  width: 100px;
+  height: 30px;
+}
